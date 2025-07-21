@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Apresentação dos Produtos</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    video {
+      width: 100%;
+      max-width: 720px;
+    }
+  </style>
+</head>
+<body>
+
+<video id="video" autoplay controls>
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  Seu navegador não suporta vídeo.
+</video>
+
+<script>
+  const video = document.getElementById("video");
+  video.addEventListener("ended", () => {
+    window.location.href = "https://www.instagram.com/polpateam/";
+  });
+</script>
+
+</body>
+</html>
